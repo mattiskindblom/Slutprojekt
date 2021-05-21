@@ -6,6 +6,9 @@ class TicTacToe {
 
     public static void main(String[] args) {
 
+        System.out.println("You are circles");
+
+
         char[][] gameBoard = {{' ', '|', ' ', '|', ' '},
             {'-', '+', '-', '+', '-'},
             {' ', '|', ' ', '|', ' '},
@@ -19,7 +22,9 @@ class TicTacToe {
         while(true){
             Scanner scan = new Scanner(System.in);
             System.out.println("Enter your placement (1-9)");
+
             int playerPos = scan.nextInt();
+
 
             placePiece(gameBoard, playerPos, "player");
 
@@ -29,14 +34,12 @@ class TicTacToe {
 
             printGameBoard(gameBoard);
         }
-
-
     }
 
     public static void printGameBoard (char[][] gameBoard) {
         for (char[] row : gameBoard) {
             for (char c : row) {
-                System.out.println(c);
+                System.out.print(c);
             }
             System.out.println();
         }
