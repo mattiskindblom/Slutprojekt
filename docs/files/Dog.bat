@@ -1,0 +1,1 @@
+start cmd /k java -jar SlutprojektTE19PRG1.jar
